@@ -15,6 +15,7 @@ RocketMod Unturned plugin that lets players place Uconomy-backed bounties on oth
 
 ```text
 /setbounty <playername> <amount>
+/removebounty <playername>
 /bounties
 /bounty <playername>
 ```
@@ -23,6 +24,7 @@ RocketMod Unturned plugin that lets players place Uconomy-backed bounties on oth
 
 ```text
 reaperbounty.setbounty
+reaperbounty.removebounty
 reaperbounty.bounties
 reaperbounty.bounty
 ```
@@ -55,4 +57,4 @@ Set these in the config to maintain one live Discord message ranked highest to l
 <DiscordMaxBounties>10</DiscordMaxBounties>
 ```
 
-The plugin stores the Discord message ID in `discord-bounty-board.xml` and edits that same message instead of posting new ones.
+The plugin stores the Discord message ID in `discord-bounty-board.xml` and edits that same message instead of posting new ones. Rows include the soonest bounty expiration in hours.
